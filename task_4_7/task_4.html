@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task_4</title>
+  </head>
+  <body>
+    <h1>Fill in your information</h1>
+    <form action="">
+      <fieldset>
+        <legend>Form</legend>
+        <label for="FirstName">First name:</label><br />
+        <input type="text" name="FirstName" id="FirstName" /><br /><br />
+
+        <label for="LastName">Last name:</label><br />
+        <input type="text" name="LastName" id="LastName" /><br /><br />
+
+        <label for="Email">Email:</label><br />
+        <input type="email" name="Email" id="Email" /><br /><br />
+
+        <label for="Gender"><b>Your gender:</b> </label><br /><br />
+        <input type="radio" name="Gender" id="Gender" value="Male" /><label
+          for="Male"
+          >Male</label
+        >
+        <input type="radio" name="Gender" id="Gender" value="Female" /><label
+          for="Female"
+          >Female</label
+        ><br /><br />
+
+        <label for=""><b>Favorite subject</b></label
+        ><br /><br />
+        <input type="checkbox" id="C++" name="C++" value="C++" />
+        <label for="C++">C++</label>
+        <input type="checkbox" id="Java" name="Java" value="Java" />
+        <label for="Java">Java</label>
+        <input type="checkbox" id="C#" name="C#" value="C#" />
+        <label for="C#">C#</label>
+        <input type="checkbox" id="Php" name="Php" value="Php" />
+        <label for="Php">Php</label>
+        <input type="checkbox" id="SQL" name="SQL" value="SQL" />
+        <label for="SQL">SQL</label><br /><br />
+
+        <label for="city"><b>Your city:</b></label
+        ><br /><br />
+        <label for="city">city:</label>
+        <select id="city" name="city" required>
+          <option value="">Select City</option>
+          <option value="Irbid">Irbid</option>
+          <option value="Amman">Amman</option>
+          <option value="Aqaba">Aqaba</option></select
+        ><br /><br />
+
+        <label for="fileUpload">Choose File:</label>
+        <input type="file" id="fileUpload" name="fileUpload" required />
+        <br /><br />
+
+        <label for="About">Write About yourself</label><br />
+        <textarea
+          id="About"
+          name="About"
+          rows="4"
+          cols="50"
+          placeholder="Write here..."
+        ></textarea>
+        <br /><br />
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+    <br />
+    <br />
+    <form action="submit_form.php" method="post">
+      <fieldset>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" /><br /><br />
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" /><br /><br />
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" /><br /><br />
+
+        <label for="zip">Zip:</label>
+        <input type="text" id="zip" name="zip" /><br /><br />
+
+        <label for="magazine">Magazine:</label>
+        <select id="magazine" name="magazine">
+          <option value="newsweek">Newsweek</option></select
+        ><br /><br />
+
+        <label>Subscription:</label><br />
+        <input type="radio" id="sub1" name="subscription" value="1year" />
+        <label for="sub1">1 year</label><br />
+        <input type="radio" id="sub2" name="subscription" value="2years" />
+        <label for="sub2">2 years</label><br /><br />
+
+        <input type="submit" value="Send Your Order" />
+      </fieldset>
+    </form>
+  </body>
+</html>
